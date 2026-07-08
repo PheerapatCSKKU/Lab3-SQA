@@ -13,10 +13,10 @@ class ShiftCipherTest {
         assertEquals("ZVMADHYL", cipher.shift("SOFTWARE", 3));
     }
 
-    // TC02 : message = "software", key = 3  -> คาดหวัง "zvmadhyl" (ตาม template)
+    // TC02 : message = "software", key = 3  -> คาดหวัง "ZVMADHYL" (ผลลัพธ์เป็นตัวพิมพ์ใหญ่)
     @Test
     void tc02_software_key3() {
-        assertEquals("zvmadhyl", cipher.shift("software", 3));
+        assertEquals("ZVMADHYL", cipher.shift("software", 3));
     }
 
     // TC03 : message = "XYZ", key = 3  -> คาดหวัง "ABC" (positive: วนรอบ)
